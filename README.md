@@ -1,4 +1,4 @@
-# mymarket
+# Fonashop
 
 This is an online shopping application build with latest web technologies like AngularJS, Material Design Lite and Firebase.
 
