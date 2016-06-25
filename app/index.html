@@ -46,36 +46,19 @@
           </nav>
         </div>
       </header>
-      <div class="mdl-layout__drawer mdl-color--lime-50">
-        <span class="mdl-layout-title mdl-color--grey">Fonashop</span>
-        <nav class="mdl-navigation">
-
-          <a class="mdl-navigation__link" href="">
-            new item <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="10">sync</div>
-          </a>
-          <a class="mdl-navigation__link" href="">
-            add to card <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="3">add_shopping_cart</div>
-          </a>
-          <a class="mdl-navigation__link" href="">login with Facebook</a>
-          <a class="mdl-navigation__link" href="">
-            Help <div class="material-icons ">help</div>
-          </a>
-        </nav>
-      </div>
+      <span ng-include="'views/leftnav.html'"></span>
       <main class="mdl-layout__content">
         <div class="page-content">
           <div ng-view=""></div>
         </div>
       </main>
-    </div>
 
-    <div class="footer">
-      <div class="container">
-        <p><span class=""></span>&copy; 2016, Tony Kamdjou</p>
+      <div class="footer">
+        <div class="container">
+          <p><span class=""></span>&copy; 2016, Tony Kamdjou</p>
+        </div>
       </div>
     </div>
-
-
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
