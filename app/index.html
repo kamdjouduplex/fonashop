@@ -25,29 +25,31 @@
     <!-- Add your site or application content here -->
     <!-- Always shows a header, even in smaller screens. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header">
+      <header class="mdl-layout__header mdl-color--lime-50">
         <div class="mdl-layout__header-row">
           <!-- Title -->
-          <span class="mdl-layout-title">Fonashop</span>
+          <span class="mdl-layout-title mdl-color-text--black">Fonashop</span>
           <!-- Add spacer, to align navigation to the right -->
-          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-layout-spacer mdl-color-text--black"></div>
           <!-- Navigation. We hide it in small screens. -->
-          <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <nav class="mdl-navigation mdl-layout--large-screen-only mdl-color-text--black">
             <a class="mdl-navigation__link" href="">
-              <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="10">sync</div>
+              <div class="material-icons mdl-badge mdl-badge--overlap mdl-color-text--black" data-badge="10">sync</div>
             </a>
             <a class="mdl-navigation__link" href="">
-              <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="3">add_shopping_cart</div>
+              <div class="material-icons mdl-badge mdl-badge--overlap mdl-color-text--black" data-badge="3">
+                add_shopping_cart
+              </div>
             </a>
-            <a class="mdl-navigation__link" href="">login with facebook</a>
-            <a class="material-icons mdl-navigation__link" href="">help</a>
+            <a class="mdl-navigation__link mdl-color-text--black" href="">login with facebook</a>
+            <a class="material-icons mdl-navigation__link mdl-color-text--black" href="">help</a>
           </nav>
         </div>
       </header>
       <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">Fonashop</span>
         <nav class="mdl-navigation">
-          
+
           <a class="mdl-navigation__link" href="">
             new item <div class="material-icons mdl-badge mdl-badge--overlap" data-badge="10">sync</div>
           </a>
@@ -61,12 +63,10 @@
         </nav>
       </div>
       <main class="mdl-layout__content">
-        <div class="page-content"><!-- Your content goes here --></div>
+        <div class="page-content">
+          <div ng-view=""></div>
+        </div>
       </main>
-    </div>
-
-    <div class="container">
-    <div ng-view=""></div>
     </div>
 
     <div class="footer">
