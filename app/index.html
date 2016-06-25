@@ -46,7 +46,25 @@
           </nav>
         </div>
       </header>
-      <span ng-include="'views/leftnav.html'"></span>
+
+      <div class="mdl-layout__drawer mdl-color--lime-50">
+        <span class="mdl-layout-title mdl-color--grey">Fonashop</span>
+        <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="">
+            For Sells <div class="material-icons">add_shopping_cart</div>
+          </a>
+          <a class="mdl-navigation__link" href="">
+            Services <div class="material-icons" data-badge="3">room service</div>
+          </a>
+          <a class="mdl-navigation__link" href="">
+            For Rents <div class="material-icons">explore</div>
+          </a>
+          <a class="mdl-navigation__link" href="">
+            Help <div class="material-icons ">help</div>
+          </a>
+        </nav>
+      </div>
+
       <main class="mdl-layout__content">
         <div class="page-content">
           <div ng-view=""></div>
