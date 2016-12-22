@@ -8,16 +8,15 @@
  *
  * Main module of the application.
  */
-angular
-  .module('mymarketApp', [
+var mymarketApp = angular.module('mymarketApp', [
     'ngAnimate',
     'ngCookies',
     'ngResource',
     'ngRoute',
     'ngSanitize',
     'ngTouch'
-  ])
-  .config(function ($routeProvider) {
+  ]);
+  mymarketApp.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
