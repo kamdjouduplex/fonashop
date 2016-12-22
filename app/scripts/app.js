@@ -23,6 +23,26 @@ var mymarketApp = angular.module('mymarketApp', [
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
+      .when('/for_sell', {
+        templateUrl: 'views/for_sell.html',
+        controller: 'ForSellCtrl',
+        controllerAs: 'for_sell'
+      })
+      .when('/for_rent', {
+        templateUrl: 'views/for_rent.html',
+        controller: 'ForRentCtrl',
+        controllerAs: 'for_rent'
+      })
+      .when('/service', {
+        templateUrl: 'views/service.html',
+        controller: 'ServiceCtrl',
+        controllerAs: 'service'
+      })
+      .when('/help', {
+        templateUrl: 'views/help.html',
+        controller: 'HelpCtrl',
+        controllerAs: 'help'
+      })
       .otherwise({
         redirectTo: '/'
       });
