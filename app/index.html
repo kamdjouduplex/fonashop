@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+  <base href="#/">
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -54,28 +55,29 @@
       <div class="mdl-layout__drawer mdl-color--lime-50">
         <span class="mdl-layout-title mdl-color--grey">Fonashop</span>
         <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="">
+          <a class="mdl-navigation__link" href="#/for_sell.html">
             <span class="lefttap">
+
               <i class="fa fa-shopping-cart" aria-hidden="true"></i> For Sell
               <i class="pull-right glyphicon glyphicon-chevron-right" ></i>
             </span>
           </a>
           <hr>
-          <a class="mdl-navigation__link" href="">
+          <a class="mdl-navigation__link" href="#/for_rent.html">
             <span class="lefttap">
               <i class="fa fa-road" aria-hidden="true"></i> For Rent
               <i class="pull-right glyphicon glyphicon-chevron-right" ></i>
             </span>
           </a>
           <hr>
-          <a class="mdl-navigation__link" href="">
+          <a class="mdl-navigation__link" href="#/service.html">
               <span class="lefttap">
                 <i class="fa fa-briefcase" aria-hidden="true"></i> Service
                 <i class="pull-right glyphicon glyphicon-chevron-right" ></i>
               </span>
           </a>
           <hr>
-          <a class="mdl-navigation__link" href="">
+          <a class="mdl-navigation__link" href="#/help.html">
             <span class="lefttap">
               <i class="fa fa-question-circle" aria-hidden="true"></i> Help
               <i class="pull-right glyphicon glyphicon-chevron-right" ></i>
@@ -126,6 +128,10 @@
         <!-- build:js({.tmp,app}) scripts/scripts.js -->
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/main.js"></script>
+        <script src="scripts/controllers/for_sell.js"></script>
+        <script src="scripts/controllers/help.js"></script>
+        <script src="scripts/controllers/for_rent.js"></script>
+        <script src="scripts/controllers/service.js"></script>
         <!-- endbuild -->
 </body>
 </html>
