@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-  <base href="#/">
+  <base href="/">
     <meta charset="utf-8">
     <title></title>
     <meta name="description" content="">
@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="bower_components/material-design-lite/material.min.css" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <script src="https://use.fontawesome.com/a660c0a3f8.js"></script>
+
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css(.tmp) styles/main.css -->
@@ -44,12 +45,10 @@
          </form>
          </div>
             <a class="mdl-navigation__link" href="">
-              <div class="material-icons mdl-badge mdl-badge--overlap mdl-color-text--black" data-badge="10">sync</div>
+              <i class="fa fa-refresh" style="font-size: 2em; color: black;" aria-hidden="true"></i>
             </a>
             <a class="mdl-navigation__link" href="">
-              <div class="material-icons mdl-badge mdl-badge--overlap mdl-color-text--black" data-badge="3">
-                add_shopping_cart
-              </div>
+              <i class="fa fa-cart-plus" style="font-size: 2em; color: black;" aria-hidden="true"></i>
             </a>
             <a class="mdl-navigation__link mdl-color-text--black" href="">login </a>
             <a class="mdl-navigation__link mdl-color-text--black" href="">Register</a>
@@ -64,7 +63,6 @@
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="#/for_sell">
             <span class="lefttap">
-
               <i class="fa fa-shopping-cart" aria-hidden="true"></i> For Sell
               <i class="pull-right glyphicon glyphicon-chevron-right" ></i>
             </span>
@@ -96,10 +94,7 @@
         
       <main class="mdl-layout__content">
         <div class="page-content">
-          <div class="container" ng-view=""></div>
-          <a href="#" class="go-top mdl-button mdl-js-button mdl-button--fab mdl-button--colored--grey">
-            <i class="fa fa-caret-up" aria-hidden="true"></i>
-          </a>
+          <div ng-view ></div>
         </div>
       
       </main>
@@ -110,16 +105,6 @@
         </div>
       </div>
     </div>
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
-     <script>
-       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
-       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
-       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
-       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-       ga('create', 'UA-XXXXX-X');
-       ga('send', 'pageview');
-    </script>
 
     <!-- build:js(.) scripts/vendor.js -->
     <!-- bower:js -->

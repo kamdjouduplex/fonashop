@@ -7,11 +7,6 @@
  * # MainCtrl
  * Controller of the mymarketApp
  */
-angular.module('mymarketApp')
-  .controller('MainCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
-  });
+mymarketApp.controller('MainCtrl', function ($scope) {
+	$scope.title = "Home page";
+});

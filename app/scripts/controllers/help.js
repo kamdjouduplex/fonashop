@@ -6,8 +6,6 @@
  * # HelpCtrl
  * Controller of the mymarketApp
  */
-mymarketApp.controller('HelpCtrl', function($scope, $route, $routeParams, $location) {
-     $scope.$route = $route;
-     $scope.$location = $location;
-     $scope.$routeParams = $routeParams;
+mymarketApp.controller('HelpCtrl', function($scope) {
+     $scope.help = "Help";
  });
