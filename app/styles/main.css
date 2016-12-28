@@ -6,4 +6,18 @@
    .footer{
 
    }
+.go-top{
+	bottom: 10px;
+	right: 10px;
+	float: right;
 
+}
+.go-top:hover {
+	background: #00a7dd;
+}
+.center{
+	text-align: center;
+}
+li{
+	color:grey;
+}
