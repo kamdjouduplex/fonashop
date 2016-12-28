@@ -6,9 +6,7 @@
  * # ForRentCtrl
  * Controller of the mymarketApp
  */
- mymarketApp.controller('ForRentCtrl', function($scope, $route, $routeParams, $location) {
-     $scope.$route = $route;
-     $scope.$location = $location;
-     $scope.$routeParams = $routeParams;
+ mymarketApp.controller('ForRentCtrl', function($scope) {
+ 	$scope.rent = "RENTING";
  });
 
