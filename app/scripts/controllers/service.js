@@ -1,5 +1,5 @@
 'use strict';
 
-  mymarketApp.controller('ServiceCtrl', function($scope) {
+  angular.module('fonashop').controller('ServiceCtrl', function($scope) {
      $scope.service = "Service";
  });

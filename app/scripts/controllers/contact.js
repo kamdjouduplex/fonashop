@@ -8,7 +8,7 @@
  * Controller of the landingApp
  */
 angular.module('landingApp')
-  .controller('MainCtrl', function () {
+  .controller('ContactCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

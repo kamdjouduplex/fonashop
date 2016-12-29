@@ -6,6 +6,6 @@
  * # HelpCtrl
  * Controller of the mymarketApp
  */
-mymarketApp.controller('HelpCtrl', function($scope) {
+angular.module('fonashop').controller('HelpCtrl', function($scope) {
      $scope.help = "Help";
  });

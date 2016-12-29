@@ -1,53 +1,40 @@
 'use strict';
 
-
-var mymarketApp = angular.module('mymarketApp', [
+/**
+ * @ngdoc overview
+ * @name landingApp
+ * @description
+ * # landingApp
+ *
+ * Main module of the application.
+ */
+angular
+  .module('landingApp', [
+    'ngAnimate',
+    'ngCookies',
+    'ngResource',
     'ngRoute',
-  ]);
-  mymarketApp.config(function ($routeProvider) {
+    'ngSanitize',
+    'ngTouch'
+  ])
+  .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
-        controller: 'MainCtrl'
+        controller: 'MainCtrl',
+        controllerAs: 'main'
       })
-      .when('/for_rent', {
-        templateUrl: 'views/for_rent.html',
-        controller: 'ForRentCtrl'
+      .when('/about', {
+        templateUrl: 'views/about.html',
+        controller: 'AboutCtrl',
+        controllerAs: 'about'
       })
-      .when('/for_sell', {
-        templateUrl: 'views/for_sell.html',
-        controller: 'ForSellCtrl',
-      })
-      .when('/service', {
-        templateUrl: 'views/service.html',
-        controller: 'ServiceCtrl',
-      })
-      .when('/help', {
-        templateUrl: 'views/help.html',
-        controller: 'HelpCtrl',
-      })
-      .when('/for_sell', {
-        templateUrl: 'views/for_sell.html',
-        controller: 'ForSellCtrl',
-        controllerAs: 'for_sell'
-      })
-      .when('/for_rent', {
-        templateUrl: 'views/for_rent.html',
-        controller: 'ForRentCtrl',
-        controllerAs: 'for_rent'
-      })
-      .when('/service', {
-        templateUrl: 'views/service.html',
-        controller: 'ServiceCtrl',
-        controllerAs: 'service'
-      })
-      .when('/help', {
-        templateUrl: 'views/help.html',
-        controller: 'HelpCtrl',
-        controllerAs: 'help'
+      .when('/contact', {
+        templateUrl: 'views/contact.html',
+        controller: 'ContactCtrl',
+        controllerAs: 'contact'
       })
       .otherwise({
         redirectTo: '/'
       });
-      $locationProvider.html5Mode(true);// it will remove the #
   });

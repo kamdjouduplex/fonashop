@@ -6,7 +6,7 @@
  * # ForRentCtrl
  * Controller of the mymarketApp
  */
- mymarketApp.controller('ForRentCtrl', function($scope) {
+ angular.module('fonashop').controller('ForRentCtrl', function($scope) {
  	$scope.rent = "RENTING";
  });
 

@@ -6,7 +6,7 @@
  * # ForSellCtrl
  * Controller of the mymarketApp
  */
-mymarketApp.controller('ForSellCtrl', function($scope) {
+angular.module('fonashop').controller('ForSellCtrl', function($scope) {
     $scope.sell = "SELL GOODS";
  });
 
