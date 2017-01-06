@@ -25,7 +25,7 @@
   firebase.initializeApp(config);
 })
 
-.controller("AuthCtrl", ["$scope", "Auth","$firebaseAuth", function($scope,Auth) {
+.controller("AuthCtrl", ["$scope", "Auth", function($scope,Auth) {
   
      this.awesomeThings = [
       'HTML5 Boilerplate',
