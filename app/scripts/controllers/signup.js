@@ -2,17 +2,16 @@
 
 /**
  * @ngdoc function
- * @name landingApp.controller:MainCtrl
+ * @name landingApp.controller:SignupCtrl
  * @description
- * # MainCtrl
+ * # SignupCtrl
  * Controller of the landingApp
  */
 angular.module('landingApp')
-  .controller('MainCtrl', function ($scope) {
-      this.awesomeThings = [
+  .controller('SignupCtrl', function () {
+    this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-
   });
