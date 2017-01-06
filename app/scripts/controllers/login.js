@@ -40,9 +40,10 @@ $scope.user = {
 $scope.login = function (){
   Auth.$signInWithEmailAndPassword($scope.user).then(function (Auth){
  console.log(firebaseUser.uid);
-  }, function (error){
+  } ,  function (error){
     $scope.error = error;
-  });
+   }
+  );
 };  
 
 $scope.signup = function (){
