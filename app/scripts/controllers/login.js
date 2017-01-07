@@ -12,7 +12,7 @@
     var Auth = $firebaseAuth();
 
     return Auth;
-  })
+})
 
   .config(function() {
   var config = {
