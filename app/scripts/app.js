@@ -15,7 +15,12 @@ angular
     'ngResource',
     'ngRoute',
     'ngSanitize',
-    'ngTouch'
+    'ngTouch',
+    'firebase'
+  
+
+   
+    
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -33,6 +38,31 @@ angular
         templateUrl: 'views/contact.html',
         controller: 'ContactCtrl',
         controllerAs: 'contact'
+      })
+      .when('/men', {
+        templateUrl: 'views/men.html',
+        controller: 'MenCtrl',
+        controllerAs: 'men'
+      })
+      .when('/women', {
+        templateUrl: 'views/women.html',
+        controller: 'WomenCtrl',
+        controllerAs: 'women'
+      })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'AuthCtrl',
+        controllerAs: 'login'
+      })
+      .when('/signup', {
+        templateUrl: 'views/signup.html',
+        controller: 'SignupCtrl',
+        controllerAs: 'signup'
+      })
+      .when('/checkout', {
+        templateUrl: 'views/checkout.html',
+        controller: 'CheckoutCtrl',
+        controllerAs: 'checkout'
       })
       .otherwise({
         redirectTo: '/'
